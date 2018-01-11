@@ -11,7 +11,7 @@ body {
     padding-right: 20px; }
 
 #search {
-  background: url("pexels-photo-374894.jpeg");
+  background: url("/pexels-photo-374894.jpeg");
   background-size: cover;
   background-attachment: fixed;
   min-height: 250px; }
