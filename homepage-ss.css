@@ -1,0 +1,113 @@
+body {
+  margin-top: 79px;
+  background-color: #eee; }
+
+.navbar {
+  box-shadow: 2px 2px 5px #16a085;
+  opacity: 0.9;
+  background: #fff; }
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 20px; }
+
+#search {
+  background: url("pexels-photo-374894.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 250px; }
+  #search .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    min-height: 250px; }
+  #search .search-inner #search-heading {
+    min-height: 150px;
+    padding-top: 35px; }
+    #search .search-inner #search-heading h1 {
+      text-align: center;
+      color: #fff; }
+  #search .search-inner #search-input .row {
+    min-height: 100px;
+    padding-left: auto;
+    padding-right: auto; }
+    #search .search-inner #search-input .row .inner-addon {
+      padding: 0;
+      margin-bottom: 5px; }
+    #search .search-inner #search-input .row .inner-addon .fa {
+      position: absolute;
+      pointer-events: none;
+      color: #949494; }
+    #search .search-inner #search-input .row .left-addon .fa {
+      left: 0px; }
+    #search .search-inner #search-input .row .left-addon input {
+      width: 100%;
+      border: 0;
+      border-radius: 0; }
+    #search .search-inner #search-input .row button {
+      background-color: #16a085;
+      color: #fff;
+      width: 100%;
+      height: 46px;
+      border-radius: 0; }
+
+#region {
+  margin-top: 80px;
+  min-height: 400px; }
+  #region table {
+    width: 100%; }
+    #region table td {
+      text-decoration: underline; }
+    #region table a {
+      color: #444; }
+    #region table a:hover {
+      color: #16a085; }
+  #region #mapsvg {
+    height: 370px; }
+
+#malls {
+  margin-top: 80px;
+  height: 400px; }
+  #malls .rs-item {
+    height: 452px;
+    width: auto;
+    margin-left: 3px;
+    margin-right: 3px; }
+    #malls .rs-item .card-img-top {
+      height: 250px;
+      width: 100%; }
+    #malls .rs-item .card-body {
+      height: 152px;
+      width: auto;
+      overflow-y: scroll; }
+      #malls .rs-item .card-body .list-group {
+        width: auto; }
+        #malls .rs-item .card-body .list-group .list-group-item {
+          height: 38px;
+          width: auto;
+          border-left: 3px solid; }
+          #malls .rs-item .card-body .list-group .list-group-item img {
+            display: inline-block;
+            height: 38px;
+            width: auto; }
+          #malls .rs-item .card-body .list-group .list-group-item div {
+            display: inline-block;
+            height: 38px;
+            width: auto; }
+    #malls .rs-item .card-footer {
+      height: 50px;
+      width: auto; }
+
+#trending {
+  margin-top: 120px;
+  margin-bottom: 40px; }
+  #trending #trending-card #myTabContent .tab-pane {
+    height: 440px;
+    overflow-x: scroll; }
+    #trending #trending-card #myTabContent .tab-pane .card {
+      display: inline-block;
+      margin: 10px;
+      width: 240px; }
+      #trending #trending-card #myTabContent .tab-pane .card img {
+        height: 400px;
+        width: 240px; }
+
+/*# sourceMappingURL=homepage-ss.css.map */

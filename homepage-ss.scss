@@ -1,0 +1,176 @@
+$themeGreen:#16a085;
+$themeBackground:#eee;
+$darkOverlay: rgba(0,0,0,0.3);
+
+body{
+  margin-top: 79px;
+  background-color: $themeBackground;
+}
+
+.navbar{
+  box-shadow: 2px 2px 5px $themeGreen;
+  opacity: 0.9;
+  background: #fff;
+
+  .nav-item{
+    font-size: 1.4rem;
+    padding-right: 20px;
+  }
+}
+
+#search{
+  background: url("pexels-photo-374894.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 250px;
+
+  .dark-overlay{
+    background-color: $darkOverlay;
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .search-inner{
+
+    #search-heading{
+      min-height: 150px;
+      padding-top: 35px;
+
+      h1{
+        text-align: center;
+        color: #fff;
+      }
+    }
+
+    #search-input{
+
+      .row{
+        min-height: 100px;
+        padding-left: auto;
+        padding-right: auto;
+
+        .inner-addon {
+          padding: 0;
+          margin-bottom: 5px;
+        }
+        .inner-addon .fa {
+          position: absolute;
+          pointer-events: none;
+          color: #949494;
+        }
+        .left-addon .fa  { left:  0px;}
+        .left-addon input  {
+          width: 100%;
+          border: 0;
+          border-radius: 0;
+        }
+
+        button{
+          background-color: $themeGreen;
+          color: #fff;
+          width: 100%;
+          height: 46px;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+#region{
+  margin-top: 80px;
+  min-height: 400px;
+
+  table{
+    width: 100%;
+
+    td{
+      text-decoration: underline;
+    }
+    a{
+      color: #444;
+    }
+    a:hover{
+      color: $themeGreen;
+    }
+  }
+
+  #mapsvg{
+    height: 370px;
+  }
+}
+
+#malls{
+  margin-top: 80px;
+  height: 400px;
+
+  .rs-item{
+    height: 452px;
+    width: auto;
+    margin-left: 3px;
+    margin-right: 3px;
+
+    .card-img-top{
+      height: 250px;
+      width: 100%;
+    }
+    .card-body{
+      height: 152px;
+      width: auto;
+      overflow-y: scroll;
+
+      .list-group{
+        width: auto;
+
+        .list-group-item{
+          height: 38px;
+          width: auto;
+          border-left: 3px solid;
+
+          img{
+            display: inline-block;
+            height: 38px;
+            width: auto;
+          }
+
+          div{
+            display: inline-block;
+            height: 38px;
+            width: auto;
+          }
+        }
+      }
+    }
+    .card-footer{
+      height: 50px;
+      width: auto;
+    }
+  }
+}
+
+#trending{
+  margin-top: 120px;
+  margin-bottom: 40px;
+
+  #trending-card{
+
+    #myTabContent{
+
+      .tab-pane{
+        height: 440px;
+        overflow-x: scroll;
+
+        .card{
+          display: inline-block;
+          margin: 10px;
+          width: 240px;
+
+          img{
+            height: 400px;
+            width: 240px;
+          }
+        }
+      }
+    }
+  }
+}

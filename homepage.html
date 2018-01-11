@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopick</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="homepage-ss.css">
+    <link rel="stylesheet" href="jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="slick.css"/>
+    <link rel="stylesheet" href="slick-theme.css">
+</head>
+<body id="home">
+
+<nav class="navbar navbar-expand-sm navbar-light fixed-top">
+    <div class="container">
+        <a href="homepage.html" class="navbar-brand">
+            <img src="shopick_logo.png" width="50" height="50"/>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#search" class="nav-link">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#region" class="nav-link">Region</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#malls" class="nav-link">Malls</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="search">
+    <div class="dark-overlay">
+        <div class="search-inner">
+            <div id="search-heading">
+                <h1>Find offers & latest collectibles</h1>
+            </div>
+
+            <div id="search-input">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="inner-addon left-addon col-lg-3 col-sm-4 col-8">
+                            <i class="fa fa-map-marker fa-2x"
+                               style="padding-top: 7px; padding-left: 10px"></i>
+                            <input type="text"
+                                   class="form-control-lg"
+                                   placeholder="City/Zipcode"
+                                   style="padding-left: 35px; font-family: 'Arial Narrow'">
+                        </div>
+                        <div class="inner-addon left-addon col-lg-3 col-sm-4 col-8">
+                            <i class="fa fa-search fa-lg"
+                               style="padding-top: 13px; padding-left: 10px"></i>
+                            <input type="text"
+                                   class="form-control-lg"
+                                   placeholder="I'm looking for..."
+                                   style="border-left: 1px solid; padding-left: 35px; border-left-color: #bbb; font-family: 'Arial Narrow'">
+                        </div>
+                        <div class="inner-addon left-addon col-lg-3 col-sm-4 col-8">
+                            <button type="submit" class="btn btn-lg">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="region">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" id="city-table">
+                <table>
+                    <thead>
+                    <h5>
+                        Select City
+                    </h5>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td><a href="#search">Delhi</a></td>
+                        <td><a href="#search">Mumbai</a></td>
+                        <td><a href="#search">Bangaluru</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#search">Agra</a></td>
+                        <td><a href="#search">Goa</a></td>
+                        <td><a href="#search">Jaipur</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#search">Kolkata</a></td>
+                        <td><a href="#search">Chennai</a></td>
+                        <td><a href="#search">Manali</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#search">Shimla</a></td>
+                        <td><a href="#search">Rishikesh</a></td>
+                        <td><a href="#search">Udaipur</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#search">Kochi</a></td>
+                        <td><a href="#search">Jaisalmer</a></td>
+                        <td><a href="#search">Varanasi</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#search">Hyderabad</a></td>
+                        <td><a href="#search">Mysore</a></td>
+                        <td><a href="#search">Jodhpur</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#search">Haridwar</a></td>
+                        <td><a href="#search">Pune</a></td>
+                        <td><a href="#search">Darjeeling</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#search">Ahemdabad</a></td>
+                        <td><a href="#search">Chandigarh</a></td>
+                        <td><a href="#search">Dharmashala</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#search">Hampi</a></td>
+                        <td><a href="#search">Amritsar</a></td>
+                        <td><a href="#search">Pushkar</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#search">Mt.Abu</a></td>
+                        <td><a href="#search">Nanital</a></td>
+                        <td><a href="#search">Madurai</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#search">Mathura</a></td>
+                        <td><a href="#search">Srinagar</a></td>
+                        <td><a href="#search">Rohtak</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-sm-6" id="mapsvg">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="malls">
+    <div class="container">
+        <div class="responsive-slider">
+            <div class="rs-item card">
+                <img src="mall1.jpg" class="card-img-top"/>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="logo1.png">
+                            <div>30%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo2.png">
+                            <div>40%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo3.jpg">
+                            <div>50%</div>
+                        <li class="list-group-item">
+                            <img src="logo4.png">
+                            <div>60%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-muted">
+                    Today
+                </div>
+            </div>
+            <div class="rs-item card">
+                <img src="mall2.jpg" class="card-img-top"/>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="logo1.png">
+                            <div>30%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo2.png">
+                            <div>40%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo3.jpg">
+                            <div>50%</div>
+                        <li class="list-group-item">
+                            <img src="logo4.png">
+                            <div>60%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-muted">
+                    1 Day ago
+                </div>
+            </div>
+            <div class="rs-item card">
+                <img src="mall3.png" class="card-img-top"/>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="logo1.png">
+                            <div>30%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo2.png">
+                            <div>40%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo3.jpg">
+                            <div>50%</div>
+                        <li class="list-group-item">
+                            <img src="logo4.png">
+                            <div>60%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-muted">
+                    2 Days ago
+                </div>
+            </div>
+            <div class="rs-item card">
+                <img src="mall4.jpg" class="card-img-top"/>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="logo1.png">
+                            <div>30%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo2.png">
+                            <div>40%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo3.jpg">
+                            <div>50%</div>
+                        <li class="list-group-item">
+                            <img src="logo4.png">
+                            <div>60%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-muted">
+                    3 Days ago
+                </div>
+            </div>
+            <div class="rs-item card">
+                <img src="malls5.jpg" class="card-img-top"/>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="logo1.png">
+                            <div>30%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo2.png">
+                            <div>40%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo3.jpg">
+                            <div>50%</div>
+                        <li class="list-group-item">
+                            <img src="logo4.png">
+                            <div>60%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-muted">
+                    Today
+                </div>
+            </div>
+            <div class="rs-item card">
+                <img src="malls6.jpg" class="card-img-top"/>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="logo1.png">
+                            <div>30%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo2.png">
+                            <div>40%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo3.jpg">
+                            <div>50%</div>
+                        <li class="list-group-item">
+                            <img src="logo4.png">
+                            <div>60%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-muted">
+                    1 Day ago
+                </div>
+            </div>
+            <div class="rs-item card">
+                <img src="malls7.jpg" class="card-img-top"/>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="logo1.png">
+                            <div>30%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo2.png">
+                            <div>40%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo3.jpg">
+                            <div>50%</div>
+                        <li class="list-group-item">
+                            <img src="logo4.png">
+                            <div>60%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-muted">
+                    2 Days ago
+                </div>
+            </div>
+            <div class="rs-item card">
+                <img src="malls8.jpg" class="card-img-top"/>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <img src="logo1.png">
+                            <div>30%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo2.png">
+                            <div>40%</div>
+                        </li>
+                        <li class="list-group-item">
+                            <img src="logo3.jpg">
+                            <div>50%</div>
+                        <li class="list-group-item">
+                            <img src="logo4.png">
+                            <div>60%</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-footer text-muted">
+                    3 Days ago
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="trending">
+    <div class="container">
+        <div class="card" id="trending-card">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active show" id="women-tab" data-toggle="tab" href="#women" role="tab"
+                           aria-controls="women" aria-selected="true">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="men-tab" data-toggle="tab" href="#men" role="tab"
+                           aria-controls="men" aria-selected="false">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="girls-tab" data-toggle="tab" href="#girls" role="tab"
+                           aria-controls="girls" aria-selected="false">Girls</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane active show" id="women" role="tabpanel" aria-labelledby="women-tab">
+                    <div class="card">
+                        <img src="trending1.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending2.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending3.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending4.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending5.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending6.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending7.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending8.jpg">
+                    </div>
+                </div>
+                <div class="tab-pane" id="men" role="tabpanel" aria-labelledby="men-tab">
+                    <div class="card">
+                        <img src="trending9.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending10.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending11.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending12.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending13.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending14.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending15.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending16.jpg">
+                    </div>
+                </div>
+                <div class="tab-pane" id="girls" role="tabpanel" aria-labelledby="girls-tab">
+                    <div class="card">
+                        <img src="trending17.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending18.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending19.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending20.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending21.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending22.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending23.jpg">
+                    </div>
+                    <div class="card">
+                        <img src="trending24.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+<!--<script src="navbar-fixed.js"></script>-->
+<script src="jquery-3.2.1.js"></script>
+<script src="jquery-jvectormap-2.0.3.min.js"></script>
+<script src="jquery-jvectormap-in-mill.js"></script>
+<script>
+    $(function () {
+        $('#mapsvg').vectorMap({
+            map: 'in_mill',
+            backgroundColor: '#eee',
+            regionStyle: {
+                initial: {
+                    fill: '#16a085',
+                    stroke: '#fff',
+                    strokeOpacity: '0.7'
+                },
+                hover: {
+                    fillOpacity: 0.8,
+                    cursor: 'pointer'
+                }
+            }
+        });
+    });
+</script>
+<script src="jquery-migrate-1.4.1.min.js"></script>
+<script src="slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.responsive-slider').slick({
+            dots: true,
+            infinite: true,
+            adaptiveHeight: true,
+            speed: 300,
+            arrows: true,
+            prevArrow: '<i class="fa fa-arrow-circle-left fa-2x" style="position: absolute; top: 226px; left: -30px"></i>',
+            nextArrow: '<i class="fa fa-arrow-circle-right fa-2x" style="position: absolute; bottom: 195px; right: -35px"></i>',
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    });
+</script>
+<script src="bootstrap.js"></script>
+</body>
+</html>
